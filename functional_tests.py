@@ -1,9 +1,7 @@
 from selenium import webdriver
 
+browser = webdriver.Firefox()
+browser.get("http://localhost:8000")
 
-def run():
-    browser = webdriver.Firefox()
-    browser.get("http://localhost:8000")
-
-    assert "Congratulations!" in browser.title
-    print("OK")
+assert "Congratulations!" in browser.title
+print("OK")
